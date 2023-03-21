@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>contact page</title>
+</head>
+<body>
+    <h1>contact page</h1>
+
+    
+    <div class="center">
+
+
+        <table>
+            <center><table border="1"></center>
+
+
+
+
+
+            <tr>
+
+
+                <th>First_Name</th>
+                <th width="350">Last_Name</th>
+                <th width="350">Contact_Number</th>
+                <th width="350">E_mail</th>
+                <th width="350">Place</th>
+            
+            </tr>
+
+            {% for review in reviews %}
+
+            <tr>
+                <td> {{review['First_Name']}} </td>
+                <td> {{review['Last_Name']}} </td>
+                <td> {{review['Contact_Number']}}</td>
+                <td> {{review['E_mail']}} </td>
+                <td> {{review['Place']}} </td>
+
+            </tr>
+            {% endfor %} 
+        </table>
+
+    </div>
+</body>
+</html>
